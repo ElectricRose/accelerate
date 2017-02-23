@@ -27,6 +27,7 @@
   margin: 0 10px;
 }
 #masthead nav ul li a{
+  font-size: 13px;
   margin-left: 25px;
   text-transform: uppercase;
 }
