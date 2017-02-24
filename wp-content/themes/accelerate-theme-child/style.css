@@ -51,6 +51,8 @@
     font-family: 'Montserrat';
     color: #a6a6a6;
     text-transform: uppercase;
+    text-align: left;
+    font-weight: normal;
   }
   .blog-post h2 {
     font-size: 24px;
@@ -58,11 +60,25 @@
 	  font-weight: bold;
   }
   .blog-post .read-more-link {
-	  font-size: 24px;
+	  font-size: 16px;
 	  font-family: 'Montserrat';
 	  color: #45ac9d;
 	  text-transform: uppercase;
+    font-weight: bold;
 }
+  .work-content h4{
+    font-size: 16px;
+    font-family: 'Montserrat';
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .work-content h5{
+    padding-left: 53px;
+  }
+  .work-content ul{
+    list-style: none;
+  }
 
 /*========== Case Studies ===========*/
 
@@ -94,4 +110,14 @@ div.case-study-images img{
   display: block;
   margin-bottom: 50px;
   border: 1px solid #dddddd;
+}
+
+
+/*============== Case Study Archive ============*/
+
+aside.case-study-sidebar h3{
+  margin-bottom: -20px;
+}
+div.case-study-images img{
+  margin-top: 10px;
 }
