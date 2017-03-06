@@ -121,3 +121,29 @@ aside.case-study-sidebar h3{
 div.case-study-images img{
   margin-top: 10px;
 }
+
+/*================= Contact ====================*/
+
+#nf-field-4{
+  display: block;
+  margin: auto;
+  background-color: #45ac9d;
+  padding: 20px 10% 20px 10%;
+  float: right;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: white;
+}
+#content-contact {
+    width: 80%;
+    margin-left: 12%;
+}
+#content-contact p{
+  margin-bottom: 0px;
+}
+.nf-field-label label{
+  font-weight: normal;
+}
+.nf-form-title h3{
+  visibility: hidden;
+}
