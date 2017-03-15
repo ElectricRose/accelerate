@@ -34,7 +34,7 @@ get_header(); ?>
 				<p>Nam id sem maximus, pulvinar neque quis, elementum nulla. In lacinia semper ultricies. Sed venenatis diam a tincidunt interdum. Quisque non maximus lorem, et molestie purus. Cras pharetra mi nulla, eget ornare neque mollis quis.</p>
 			</div>
 			<div class="image2">
-				<img src="/img/atom.png" alt="Atom image" style="width:216px;height:216px;">
+				<img src="<?php echo get_template_directory(); ?>/img/atom.png" />
 			</div>
 			<div class="image3">
 				<img src="/img/like.png" alt="Thumbs up image" style="width:216px;height:216px;">
@@ -51,7 +51,7 @@ get_header(); ?>
 				<img src="/img/design.png" alt="Magic wand image" style="width:216px;height:216px;">
 			</div>
 			<div id="work-with-us">
-				<h3>Interested in working with us?</h3> 
+				<h3>Interested in working with us?</h3>
 			</div>
 	</div>
 </div>
