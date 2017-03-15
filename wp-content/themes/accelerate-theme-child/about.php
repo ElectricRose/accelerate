@@ -23,7 +23,7 @@ get_header(); ?>
 				Here's a brief overview of our offered services.</p>
 			</div>
 				<div class="image1">
-					<img src="/img/bullseye.png" alt="Bullseye image" style="width:216px;height:216px;">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/bullseye.png" />
 				</div>
 			<div class="service1">
 				<h3>Content Strategy</h3>
@@ -34,10 +34,10 @@ get_header(); ?>
 				<p>Nam id sem maximus, pulvinar neque quis, elementum nulla. In lacinia semper ultricies. Sed venenatis diam a tincidunt interdum. Quisque non maximus lorem, et molestie purus. Cras pharetra mi nulla, eget ornare neque mollis quis.</p>
 			</div>
 			<div class="image2">
-				<img src="<?php echo get_template_directory(); ?>/img/atom.png" />
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/atom.png" />
 			</div>
 			<div class="image3">
-				<img src="/img/like.png" alt="Thumbs up image" style="width:216px;height:216px;">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/like.png" />
 			</div>
 			<div class="service3">
 				<h3>Social Media Strategy</h3>
@@ -48,7 +48,7 @@ get_header(); ?>
 				<p>In non odio fermentum, sodales sem interdum, posuere dolor. Nullam eu rutrum purus. Sed at ultrices ipsum. Curabitur ut finibus diam, in placerat augue. Sed urna massa, lacinia eget mollis et, volutpat at ipsum. Nulla ac consequat magna, eu vulputate ipsum.</p>
 			</div>
 			<div class="image4">
-				<img src="/img/design.png" alt="Magic wand image" style="width:216px;height:216px;">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/design.png" />
 			</div>
 			<div id="work-with-us">
 				<h3>Interested in working with us?</h3>
