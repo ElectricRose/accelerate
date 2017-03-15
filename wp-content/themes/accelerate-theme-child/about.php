@@ -17,24 +17,41 @@ get_header(); ?>
 				<?php the_content(); ?>
 		<?php endwhile; // end of the loop. ?>
 		<div class="about-container">
+			<div class="our-services">
 			<h4>Our Services</h4>
 			<p>We take pride in our clients and the content we create for them.<br>
 				Here's a brief overview of our offered services.</p>
+			</div>
 				<div class="image1">
+					<img src="/img/bullseye.png" alt="Bullseye image" style="width:216px;height:216px;">
 				</div>
 			<div class="service1">
-			</div>
-			<div class="image2">
+				<h3>Content Strategy</h3>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut ante felis, blandit ac orci quis, porttitor mollis ex. Nunc a nunc elit. Etiam id mauris porta, tempus justo a, mollis eros. Donec eget tristique dui. Sed sed vestibulum est.</p>
 			</div>
 			<div class="service2">
+				<h3>Influencer Mapping</h3>
+				<p>Nam id sem maximus, pulvinar neque quis, elementum nulla. In lacinia semper ultricies. Sed venenatis diam a tincidunt interdum. Quisque non maximus lorem, et molestie purus. Cras pharetra mi nulla, eget ornare neque mollis quis.</p>
+			</div>
+			<div class="image2">
+				<img src="/img/atom.png" alt="Atom image" style="width:216px;height:216px;">
 			</div>
 			<div class="image3">
+				<img src="/img/like.png" alt="Thumbs up image" style="width:216px;height:216px;">
 			</div>
 			<div class="service3">
-			</div>
-			<div class="image4">
+				<h3>Social Media Strategy</h3>
+				<p>Nulla nec sapien in risus tempus cursus. Morbi bibendum nunc sed diam pellentesque bibendum in at purus. Curabitur luctus sapien in neque rhoncus ullamcorper. Phasellus aliquet in enim eu consectetur. Cras non lectus nec dolor faucibus volutpat.</p>
 			</div>
 			<div class="service4">
+				<h3>Design & Development</h3>
+				<p>In non odio fermentum, sodales sem interdum, posuere dolor. Nullam eu rutrum purus. Sed at ultrices ipsum. Curabitur ut finibus diam, in placerat augue. Sed urna massa, lacinia eget mollis et, volutpat at ipsum. Nulla ac consequat magna, eu vulputate ipsum.</p>
+			</div>
+			<div class="image4">
+				<img src="/img/design.png" alt="Magic wand image" style="width:216px;height:216px;">
+			</div>
+			<div id="work-with-us">
+				<h3>Interested in working with us?</h3> 
 			</div>
 	</div>
 </div>
