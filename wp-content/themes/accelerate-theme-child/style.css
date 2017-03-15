@@ -21,6 +21,7 @@
 #masthead nav{
   float: right;
   margin-top: -23px;
+  margin-right: -141px;
 }
 #masthead nav ul li{
   float: left;
@@ -166,7 +167,12 @@ div.case-study-images img{
 
 .about-hero h1 {
 	color:white;
-	font-weight:bold;
+	font-weight:normal;
+  font-size: 2.4em;
+  margin-top: -20%;
+}
+.about-hero h1 span{
+  color: #45ac9d;
 }
 .about-hero h2{
   color: white;
@@ -174,9 +180,6 @@ div.case-study-images img{
   font-size: 41px;
   margin-top: 0px;
   padding-top: 250px;
-}
-.about-hero h2 span{
-  color: #45ac9d;
 }
 
 .about-hero h3 {
@@ -187,7 +190,7 @@ div.case-study-images img{
     margin: 16px 0 20px;
 }
 .our-services{
-  margin: 18% 0 6% 0;
+  margin: 29% 0 6% 0;
   clear: both;
 }
 .image1, .image2, .image3, .image4{

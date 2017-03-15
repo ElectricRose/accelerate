@@ -16,6 +16,7 @@ get_header(); ?>
 			<div class='about-hero'>
 				<?php the_content(); ?>
 		<?php endwhile; // end of the loop. ?>
+		<h1><span>Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visable and making their customers smile.</h1>
 		<div class="about-container">
 			<div class="our-services">
 			<h4>Our Services</h4>
