@@ -41,6 +41,19 @@ function create_custom_post_types() {
           ),
       )
     );
+
+        register_post_type( 'about_page',
+            array(
+                'labels' => array(
+                    'name' => __( 'About Pages' ),
+                    'singular_name' => __( 'About Page' )
+                ),
+                'public' => true,
+                'has_archive' => true,
+                'rewrite' => array(
+                  'slug' => 'about-page' ),
+            )
+        );
 }
 
 
