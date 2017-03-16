@@ -14,7 +14,6 @@ get_header(); ?>
 		<div id="content" role="main">
 
 
-
 			<?php endwhile; // end of the loop. ?>
 
 		</div><!-- #content -->
