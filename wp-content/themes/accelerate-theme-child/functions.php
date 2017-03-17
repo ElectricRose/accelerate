@@ -42,16 +42,14 @@ function create_custom_post_types() {
       )
     );
 
-        register_post_type( 'about_page',
+        register_post_type( 'services',
             array(
                 'labels' => array(
-                    'name' => __( 'About Pages' ),
-                    'singular_name' => __( 'About Page' )
+                    'name' => __( 'Services' ),
                 ),
                 'public' => true,
-                'has_archive' => true,
                 'rewrite' => array(
-                  'slug' => 'about-page' ),
+                  'slug' => 'services' ),
             )
         );
 }
