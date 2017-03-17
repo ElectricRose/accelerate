@@ -46,10 +46,11 @@ function create_custom_post_types() {
             array(
                 'labels' => array(
                     'name' => __( 'Services' ),
+                    'singular_name' => _( 'Service' )
                 ),
                 'public' => true,
-                'rewrite' => array(
-                  'slug' => 'services' ),
+                'has_archive' => false,
+                'supports' => array('title', 'editor', 'page-attributes') // So it's possible to sort by menu order
             )
         );
 }
