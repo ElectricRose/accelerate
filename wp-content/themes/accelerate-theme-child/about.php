@@ -11,14 +11,7 @@
 
 get_header(); ?>
 <section class="about-page">
-	<div class="about-content">
-
-		<?php while ( have_posts() ) : the_post(); ?
-			<div class='about-hero'>
-				<?php the_content(); ?>
-			</div>
-		<?php endwhile; // end of the loop. ?>
-
+	<div class="about-content" role="main">
 
 		<?php query_posts('posts_per_page=3&post_type=services'); ?>
 		<?php while ( have_posts() ) : the_post();
@@ -32,7 +25,7 @@ get_header(); ?>
 			$service3 = get_field('service3')
 			$service4 = get_field('service4')
 			$image4 = get_field('image4')
-			$work_with_us = get_field('work_with_us')?>
+			$work_with_us = get_field('work_with_us') ?>
 
 			<article class="services">
 						<h2><?php the_title(); ?></h2>
@@ -42,13 +35,11 @@ get_header(); ?>
 						<h5><?php echo $service3; ?></h5>
 						<h5><?php echo $service4; ?></h5>
 						<h5><?php echo $work_with_us; ?></h5>
+					</article>
 
 		<div>
-			<?php echo wp_get_attachment_image( $image1, $image2, $image3, $image4, $size ); ?>
+			<?php echo wp_get_attachment_image($image1, $image2, $image3, $image4, $size ); ?>
 		</div>
-		<?php endwhile;
-		wp_reset_query(); ?>
-
 </div>
 </section>
 
