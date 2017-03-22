@@ -13,19 +13,19 @@ get_header(); ?>
 <section class="about-page">
 	<div class="about-content" role="main">
 
-		<?php query_posts('posts_per_page=3&post_type=services'); ?>
+		<?php query_posts('post_type=services'); ?>
 		<?php while ( have_posts() ) : the_post();
 			$size = "full";
 			$our_services = get_field('our_services');
 			$image1 = get_field('image1');
-			$service1 = get_field('service1')
-			$service2 = get_field('service2')
-			$image2 = get_field('image_2');
-			$image3 = get_field('image_3');
-			$service3 = get_field('service3')
-			$service4 = get_field('service4')
-			$image4 = get_field('image4')
-			$work_with_us = get_field('work_with_us') ?>
+			$service1 = get_field('service1');
+			$service2 = get_field('service2');
+			$image2 = get_field('image2');
+			$image3 = get_field('image3');
+			$service3 = get_field('service3');
+			$service4 = get_field('service4');
+			$image4 = get_field('image4');
+			$work_with_us = get_field('work_with_us'); ?>
 
 			<article class="services">
 						<h2><?php the_title(); ?></h2>
