@@ -218,6 +218,16 @@ div.case-study-images img{
 .outtro h3{
 border-top: 2px solid #e6e6e6;
 border-bottom: 2px solid #e6e6e6;
-margin: 5%;
+margin: 5% 10%;
 padding: 5%;
+}
+
+.outtro a.button, .outtro a.button:link {
+    color: white;
+    float: left;
+    margin: -15% 0 0 56%;
+    width: 20%;
+  }
+#about-footer{
+  clear: both;
 }

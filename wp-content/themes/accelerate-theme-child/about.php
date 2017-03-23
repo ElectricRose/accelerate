@@ -74,6 +74,7 @@ get_header(); ?>
 
 						<div class = "outtro">
 							<h3>Interested in working with us?</h3>
+							<a class="button" href="http://localhost:8888/accelerate/contact">Contact Us</a>
 						</div>
 			</li>
 				<?php endwhile;
@@ -83,5 +84,6 @@ get_header(); ?>
 	</div>
 	</section>
 
-
+<div id ="about-footer">
 <?php get_footer(); ?>
+</div>
