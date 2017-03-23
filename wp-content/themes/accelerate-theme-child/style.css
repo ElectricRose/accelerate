@@ -33,8 +33,11 @@
   text-transform: uppercase;
 }
 /* ============== Homepage Styles ================= */
-  .home-page {
+  .home-page, .about-page{
     background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+    height: 440px;
+    margin: 0 0 80px;
+    padding: 100px 0;
 }
   .button {
     background: none repeat scroll 0 0 #45ac9d;
@@ -80,6 +83,15 @@
   .work-content ul{
     list-style: none;
   }
+
+  li.individual-featured-work {
+    display: inline-block;
+    width: 31%;
+    margin-right: 3%;
+}
+li.individual-featured-work:last-of-type {
+    margin-right: 0;
+}
 
 /*========== Case Studies ===========*/
 
@@ -150,82 +162,60 @@ div.case-study-images img{
 }
 
 /*================ About Page =============*/
-.about-page {
-  background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
-}
-
-.about-content {
+.about-content{
 	width:960px;
-  height:620px;
 	margin:auto;
 	padding:0 10px;
 }
-
-.about-hero {
-	text-align:center;
-}
-
 .about-hero h1 {
 	color:white;
 	font-weight:normal;
   font-size: 2.4em;
-  margin-top: -20%;
+  margin-top: 4%;
 }
 .about-hero h1 span{
   color: #45ac9d;
 }
-.about-hero h2{
-  color: white;
+.intro h4 {
+  color: black;
+  font-family: "open sans";
+  font-size: 24px;
   font-weight: normal;
-  font-size: 41px;
-  margin-top: 0px;
-  padding-top: 250px;
+  margin: 38% 0 10% 0;
+  text-align: center;
 }
 
-.about-hero h3 {
-    color: black;
-    font-family: "open sans";
-    font-size: 24px;
-    font-weight: normal;
-    margin: 16px 0 20px;
-}
-.our-services{
-  margin: 29% 0 6% 0;
-  clear: both;
-}
-.image1, .image2, .image3, .image4{
+#image1, #image2, #image3, #image4{
   float: left;
   display: inline-block;
-
 }
-.image2, .image4{
+#image2, #image4{
   float: right;
   display: inline-block;
 }
-.image2{
+#image2{
   margin-top: -22%;
 }
-.image3{
+#image3{
   margin-top: 3%;
 }
-.image4{
+#image4{
   margin-top: -22%;
 }
-.service1, .service3{
+#service1, #service3{
   float: left;
   display: inline-block;
   text-align: left;
   width: 70%;
   padding: 3% 0 4% 4%;
 }
-
-.service2, .service4{
+#service2, #service4{
   text-align: left;
   width: 74%;
   padding: 3% 1% 3% 0;
   clear: left;
 }
-#work-with-us h3{
+.outtro h3{
 border-top: 2px solid #e6e6e6;
 border-bottom: 2px solid #e6e6e6;
 margin: 5%;

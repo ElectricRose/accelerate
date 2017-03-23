@@ -33,6 +33,10 @@ get_header(); ?>
 			<ul class="homepage-featured-work">
 			<?php query_posts('posts_per_page=3&post_type=case_studies'); ?>
 				<?php while ( have_posts() ) : the_post();
+				$args = array(
+					'orderby' => 'title',
+					'order'   => 'DESC', );
+					$query = new WP_Query( $args );
 					$image_1 = get_field('image_1');
 					$size = "medium";
 				?>
