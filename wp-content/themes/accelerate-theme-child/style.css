@@ -237,12 +237,19 @@ padding: 5%;
   width: 40%;
   display: block;
   margin-left: 55%;
-  padding: 5% 0 5% 0;
+  padding: 4% 0 1% 0;
 }
 .work-sidebar aside{
   width: 20%;
 }
 .work-side{
-  margin-top: -82%;
+  margin-top: -100%;
   margin-left: 9%;
+}
+#work2{
+  margin-top: 29%;
+}
+#work3{
+  margin-top: 22%;
+  margin-bottom: 20%;
 }
