@@ -11,61 +11,56 @@
 
  get_header(); ?>
 
- 	<div id="primary" class="work-content">
- 		<div id="content" role="main">
-
-			<ul class="work">
+ 	<div class="work-content">
 			<?php query_posts('posts_per_page=3&post_type=case_studies&order=ASC');?>
 				<?php while ( have_posts() ) : the_post();
 					$image_1 = get_field('image_1');
-					$size = "full";
-				?>
-				<li class="work-featured-work">
-						<figure>
+					$size = "large";
+					$services = get_field('services');
+	        $client = get_field('client');
+	        $link = get_field('site_link'); ?>
+
+					<div class="works">
+						<ul class="work">
+							<li class="work-list">
+						<figure id ="work-img">
 							<?php echo wp_get_attachment_image($image_1, $size); ?>
 						</figure>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					</div>
 				</li>
-			<?php endwhile; ?>
-				<?php wp_reset_query(); ?>
 			</ul>
 
- 			<?php while ( have_posts() ) : the_post();
- 				$size = "full";
- 				$services = get_field('services');
- 				$client = get_field('client');
- 				$link = get_field('site_link');
- 				$image_1 = get_field('image_1');
- 				$image_2 = get_field('image_2');
- 				$image_3 = get_field('image_3'); ?>
+		<?php endwhile; ?>
+			<?php wp_reset_query(); ?>
 
- 			<article class="case-study">
- 					<aside class="work-study-sidebar">
- 						<h2><?php the_title(); ?></h2>
- 						<h5><?php echo $services; ?></h5>
- 						<h6>Client: <?php echo $client; ?></h6>
+			<div class="work-side">
+			<aside class="work-sidebar">
+				<div id ="work1">
+					<h3>MailChimp Campaign</h3>
+					<h2><a href="<?php the_permalink(); ?>"<?php the_title(); ?></a></h2>
+					<h5><?php echo $services; ?></h5>
+					<?php the_excerpt(); ?>
+					<p><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></p>
+				</div>
 
- 						<?php the_content(); ?>
+				<div id ="work2">
+					<h3>Coroflot Advertising</h3>
+					<h2><a href="<?php the_permalink(); ?>"<?php the_title(); ?></a></h2>
+					<h5><?php echo $services; ?></h5>
+					<?php the_excerpt(); ?>
+					<p><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></p>
+				</div>
 
- 						<p><strong><a href="<?php echo $link; ?>">Site Link</a></strong></p>
- 					</aside>
+				<div id ="work3">
+					<h3>Zurb Foundation</h3>
+					<h2><a href="<?php the_permalink(); ?>"<?php the_title(); ?></a></h2>
+					<h5><?php echo $services; ?></h5>
+					<?php the_excerpt(); ?>
+					<p><strong><a href="<?php the_permalink(); ?>">View Project ></a></strong></p>
+				</div>
+			</aside>
+ 		</div>
+	</div>
 
- 					<div class="case-study-images">
- 						<?php
- 						  	if($image_1) {
- 						      echo wp_get_attachment_image( $image_1, $size );
- 						      }
- 						    if($image_2) {
- 						      echo wp_get_attachment_image( $image_2, $size );
- 						      }
- 						    if($image_3) {
- 						      echo wp_get_attachment_image( $image_3, $size );
- 						      }
- 						?>
- 					</div>
 
- 			<?php endwhile; // end of the loop. ?>
-
- 		</div><!-- #content -->
- 	</div><!-- #primary -->
  <?php get_footer(); ?>

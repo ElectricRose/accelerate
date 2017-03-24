@@ -233,15 +233,16 @@ padding: 5%;
 }
 
 /*============== Work Page ================*/
-li.work-featured-work {
-    display: block;
-    width: 31%;
+.works {
+  width: 40%;
+  display: block;
+  margin-left: 55%;
+  padding: 5% 0 5% 0;
 }
-.work-content ul {
-    list-style: none;
-    float: right;
+.work-sidebar aside{
+  width: 20%;
 }
-aside.work-study-sidebar {
-    float: left;
-    width: 314px;
-    margin: 0 40px 0 0;
+.work-side{
+  margin-top: -82%;
+  margin-left: 9%;
+}
