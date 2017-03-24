@@ -231,3 +231,17 @@ padding: 5%;
 #about-footer{
   clear: both;
 }
+
+/*============== Work Page ================*/
+li.work-featured-work {
+    display: block;
+    width: 31%;
+}
+.work-content ul {
+    list-style: none;
+    float: right;
+}
+aside.work-study-sidebar {
+    float: left;
+    width: 314px;
+    margin: 0 40px 0 0;
