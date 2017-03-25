@@ -8,7 +8,7 @@
  * @since Accelerate Theme 1.1
  */
 
-get_header(); ?> 
+get_header(); ?>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
