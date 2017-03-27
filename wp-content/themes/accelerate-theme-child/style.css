@@ -255,3 +255,39 @@ padding: 5%;
 }
 
 /*============= 404 Page ================*/
+
+.content404-area {
+   background: url("img/cat1.png") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+}
+.page404-header {
+   font-size: 25px;
+   margin-left: 40%;
+}
+.error-wrapper {
+   margin: 0 auto;
+   max-width: 670px;
+}
+.error-message {
+   max-width: 80%;
+   padding: 5%;
+   text-align: center;
+}
+.search-form {
+   float: right;
+   width: 500px;
+}
+.error-links {
+   float: left;
+   max-width: 600px;
+   padding-left :60px;
+}
+.error-links li {
+   float: left;
+   list-style: none;
+   padding-left: 150px;
+   padding-top: 50px;
+}
+.search-form p {
+   font-size: 18px;
+   text-align: center;
+}
