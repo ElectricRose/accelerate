@@ -255,3 +255,15 @@ padding: 5%;
 }
 
 /*============= 404 Page ================*/
+
+.cat-404 img{
+  margin: 5%;
+  position: relative;
+  width: 100%;
+}
+.cat-404 h1, .cat-404 p{
+  position: absolute;
+  top: 200px;
+  width: 100%;
+
+}
