@@ -7,29 +7,28 @@
  * @subpackage Accelerate Marketing
  * @since Accelerate Marketing 1.0
  */
-?>
+get_header(); ?>
       <div class="content404-area">
            <div class="a404-content" role="main">
-                <header class="page404-header" style="margin-left:35%;">
-                     <h1>Oh no! You have a 404 Error!</h1>
-                </header>
+                <div id="page404-header">
+                     <h2>Oh no! A 404 Error!</h2>
+                </div>
                 <div class="error-wrapper">
-                   <div class="error-logo">
-                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cat1.png" alt="Surprised Cat" style="width:1200px;height:898px;margin-left:7%;">
-                   </div>
                       <div class="error-message">
-                          <p style="margin-left:38%;">Sorry, but you seem to be in the wrong place.</p>
+                          <p>You seem to be a little lost.</p>
                       </div>
                   </div>
                          <div class="search-form">
-                         <p style="margin-left:38%;"> You can search below or return to homepage </p>
+                         <p> Try another page instead! </p>
                          <ul>
-                           <li style="margin-left:37%;list-style:none;"><?php get_search_form(); ?></li>
+                           <li><?php get_search_form(); ?></li>
                          </ul>
                         </div>
-                   <ul class="error-links">
-                        <li style="list-style:none;margin-left:1%;"><a href="<?php echo home_url(); ?> ">Home</a> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cat3.png"/> </li>
-                        <li style="list-style:none;margin-left:75%;margin-top:-15%;"> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cat2.png"/><a href=" # ">Popular Pages</a></li>
-                   </ul>
+                   <div class="error-links">
+                        <div id="leftcat"><a href="<?php echo home_url(); ?> ">Home</a> <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cat3.png"/> </li>
+                        <div id="rightcat"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cat2.png"/><a href="blog"></a></li>
+                   </div>
            </div><!-- #content -->
       </div><!-- #primary -->
+
+<?php get_footer(); ?>
