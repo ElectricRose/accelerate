@@ -9,11 +9,28 @@
  * @since Accelerate Marketing 1.0
  */
 
+
 get_header(); ?>
+
 <section class="about-page">
 	<div class="about-content" role="main">
-		<div class="service-content">
+		<?php while ( have_posts() ) : the_post(); ?>
+		<div class="about-hero">
+			<h3><?php the_content(); ?></h3>
+				<div class="hero-text">
+				<h1><span>Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.<h1>
+				</div>
+		<?php endwhile; // end of the loop. ?>
+		</div>
+	</div>
+	</section>
 
+
+
+		<div class="service-content">
+			<div class = "intro">
+		  	<h4>We take pride in our clients and the content we create for them.<br> Here's a brief overview of our offered services</h4>
+			</div>
 			<ul class="services">
 				<?php query_posts('post_type=services'); ?>
 				<?php while ( have_posts() ) : the_post();
@@ -25,13 +42,6 @@ get_header(); ?>
 				$size = "full"; ?>
 
 				<li class="individual-services">
-					<div class = "about-hero">
-						<h1><span>Accelerate</span> is a strategy and marketing agency located in the heart of NYC. Our goal is to build businesses by making our clients visible and making their customers smile.<h1>
-						</div>
-						<div class = "intro">
-							<h4>We take pride in our clients and the content we create for them.<br> Here's a brief overview of our offered services</h4>
-						</div>
-
 						<div class = "all-services">
 								<div id = "image1">
 									<?php echo wp_get_attachment_image($image_10, $size); ?>
@@ -81,8 +91,6 @@ get_header(); ?>
 	  		wp_reset_query(); ?>
 			</ul>
 		</div>
-	</div>
-	</section>
 
 <div id ="about-footer">
 <?php get_footer(); ?>

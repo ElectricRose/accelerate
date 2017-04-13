@@ -50,7 +50,7 @@
     padding-right: 50px;
     float: left;
   }
-  .blog-post h4 {
+  .blog-post h4, .widget-title {
     font-size: 16px;
     font-family: 'Montserrat';
     color: #a6a6a6;
@@ -91,6 +91,14 @@
 }
 li.individual-featured-work:last-of-type {
     margin-right: 0;
+}
+.twitter-feed{
+  width: 44.75%;
+  padding: 1% 0 0 5%;
+  float: left;
+}
+.widget li{
+  list-style: none;
 }
 
 /*========== Case Studies ===========*/
@@ -181,10 +189,16 @@ div.case-study-images img{
   font-family: "open sans";
   font-size: 24px;
   font-weight: normal;
-  margin: 38% 0 10% 0;
+  margin: 6% 0 10% 0;
   text-align: center;
 }
-
+.service-content{
+  width: 80%;
+  margin-left: 10%;
+}
+.individual-services{
+  list-style: none;
+}
 #image1, #image2, #image3, #image4{
   float: left;
   display: inline-block;
@@ -287,7 +301,6 @@ padding: 5%;
 .screen-reader-text{
 visibility: hidden;
 }
-
 .error-links {
   float: left;
   max-width: 600px;
@@ -300,4 +313,7 @@ visibility: hidden;
 #rightcat{
   padding-left: 188%;
   margin-top: -66%;
+}
+.search-form li{
+  list-style: none;
 }
