@@ -100,6 +100,10 @@ li.individual-featured-work:last-of-type {
 .widget li{
   list-style: none;
 }
+.widget ul{
+  margin:8% 0 8% 0;
+}
+
 
 /*========== Case Studies ===========*/
 
@@ -317,3 +321,40 @@ visibility: hidden;
 .search-form li{
   list-style: none;
 }
+
+/*============= Footer ================*/
+
+
+
+/*=============================================*/
+/*============= Responsive Design =============*/
+/*=============================================*/
+
+
+@media screen and (min-width: 768px) {
+  /*Tablet styles here!*/
+
+
+  /* ============== Homepage Styles ================= */
+  /*========== Case Studies ===========*/
+  /*============== Case Study Archive ============*/
+  /*================= Contact ====================*/
+  /*================ About Page =============*/
+  /*============== Work Page ================*/
+  /*============= 404 Page ================*/
+  /*============= Footer ================*/
+
+
+
+
+@media screen and (max-width: 767px) {
+  /*Mobile styles here!*/
+
+/* ============== Homepage Styles ================= */
+/*========== Case Studies ===========*/
+/*============== Case Study Archive ============*/
+/*================= Contact ====================*/
+/*================ About Page =============*/
+/*============== Work Page ================*/
+/*============= 404 Page ================*/
+/*============= Footer ================*/
