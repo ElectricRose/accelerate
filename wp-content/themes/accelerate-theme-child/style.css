@@ -329,10 +329,13 @@ visibility: hidden;
 /*=============================================*/
 /*============= Responsive Design =============*/
 /*=============================================*/
+/* @media screen and (max-width: 767px) {}
+  /*Mobile styles here!*/
 
 
-@media screen and (min-width: 768px) {
+/*@media screen and (min-width: 768px) {
   /*Tablet styles here!*/
+
 
 
   /* ============== Homepage Styles ================= */
@@ -344,11 +347,11 @@ visibility: hidden;
   /*============= 404 Page ================*/
   /*============= Footer ================*/
 
+}
 
 
-
-@media screen and (max-width: 767px) {
-  /*Mobile styles here!*/
+/*@media screen and (min-width: 940px) {
+  /*Desktop styles here!*/
 
 /* ============== Homepage Styles ================= */
 /*========== Case Studies ===========*/
@@ -358,3 +361,4 @@ visibility: hidden;
 /*============== Work Page ================*/
 /*============= 404 Page ================*/
 /*============= Footer ================*/
+}
